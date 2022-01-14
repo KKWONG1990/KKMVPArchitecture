@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126BFC322791481F00EF2E0D /* KKNewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 126BFC312791481F00EF2E0D /* KKNewPresenter.m */; };
 		12EBC64C278FC94D0067C88D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC64B278FC94D0067C88D /* AppDelegate.m */; };
 		12EBC64F278FC94D0067C88D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC64E278FC94D0067C88D /* SceneDelegate.m */; };
 		12EBC652278FC94D0067C88D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC651278FC94D0067C88D /* ViewController.m */; };
@@ -16,12 +17,12 @@
 		12EBC65D278FC94F0067C88D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC65C278FC94F0067C88D /* main.m */; };
 		12EBC667278FC9500067C88D /* KKMVPArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC666278FC9500067C88D /* KKMVPArchitectureTests.m */; };
 		12EBC672278FC9500067C88D /* KKMVPArchitectureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC671278FC9500067C88D /* KKMVPArchitectureUITests.m */; };
-		12EBC686278FC9CF0067C88D /* KKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC685278FC9CF0067C88D /* KKContext.m */; };
+		12EBC686278FC9CF0067C88D /* KKMVPContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC685278FC9CF0067C88D /* KKMVPContext.m */; };
 		12EBC692278FCB9C0067C88D /* UIViewController+KKMVP.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC691278FCB9C0067C88D /* UIViewController+KKMVP.m */; };
 		12EBC69B278FCD3B0067C88D /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC69A278FCD3B0067C88D /* NewViewController.m */; };
-		12EBC6B0278FD95D0067C88D /* KKPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC6AF278FD95D0067C88D /* KKPresenter.m */; };
+		12EBC6B0278FD95D0067C88D /* KKMVPPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC6AF278FD95D0067C88D /* KKMVPPresenter.m */; };
 		12EBC6D1279013E70067C88D /* KKCommonCollectionViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC6CE279013E60067C88D /* KKCommonCollectionViewProvider.m */; };
-		12EBC6D2279013E70067C88D /* KKCommonTableviewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC6CF279013E60067C88D /* KKCommonTableviewProvider.m */; };
+		12EBC6D2279013E70067C88D /* KKCommonTableViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EBC6CF279013E60067C88D /* KKCommonTableViewProvider.m */; };
 		C8F903F427906C8F00E9BBEE /* KKProviderDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F903F327906C8F00E9BBEE /* KKProviderDataHandler.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		126BFC2527910B8500EF2E0D /* KKMVPContextInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMVPContextInterface.h; sourceTree = "<group>"; };
+		126BFC2C2791473600EF2E0D /* KKMVPPresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMVPPresentation.h; sourceTree = "<group>"; };
+		126BFC302791481F00EF2E0D /* KKNewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKNewPresenter.h; sourceTree = "<group>"; };
+		126BFC312791481F00EF2E0D /* KKNewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKNewPresenter.m; sourceTree = "<group>"; };
+		126BFC362791482F00EF2E0D /* KKNewPresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKNewPresentation.h; sourceTree = "<group>"; };
 		12EBC647278FC94D0067C88D /* KKMVPArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKMVPArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12EBC64A278FC94D0067C88D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12EBC64B278FC94D0067C88D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,19 +67,18 @@
 		12EBC66D278FC9500067C88D /* KKMVPArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKMVPArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12EBC671278FC9500067C88D /* KKMVPArchitectureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMVPArchitectureUITests.m; sourceTree = "<group>"; };
 		12EBC673278FC9500067C88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12EBC684278FC9CF0067C88D /* KKContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKContext.h; sourceTree = "<group>"; };
-		12EBC685278FC9CF0067C88D /* KKContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKContext.m; sourceTree = "<group>"; };
+		12EBC684278FC9CF0067C88D /* KKMVPContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMVPContext.h; sourceTree = "<group>"; };
+		12EBC685278FC9CF0067C88D /* KKMVPContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMVPContext.m; sourceTree = "<group>"; };
 		12EBC690278FCB9C0067C88D /* UIViewController+KKMVP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KKMVP.h"; sourceTree = "<group>"; };
 		12EBC691278FCB9C0067C88D /* UIViewController+KKMVP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KKMVP.m"; sourceTree = "<group>"; };
 		12EBC699278FCD3B0067C88D /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		12EBC69A278FCD3B0067C88D /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
-		12EBC6AE278FD95D0067C88D /* KKPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPresenter.h; sourceTree = "<group>"; };
-		12EBC6AF278FD95D0067C88D /* KKPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPresenter.m; sourceTree = "<group>"; };
-		12EBC6C0278FEE0E0067C88D /* KKContextInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKContextInterface.h; sourceTree = "<group>"; };
+		12EBC6AE278FD95D0067C88D /* KKMVPPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMVPPresenter.h; sourceTree = "<group>"; };
+		12EBC6AF278FD95D0067C88D /* KKMVPPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMVPPresenter.m; sourceTree = "<group>"; };
 		12EBC6C8278FF1B20067C88D /* KKContract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKContract.h; sourceTree = "<group>"; };
-		12EBC6CD279013E50067C88D /* KKCommonTableviewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommonTableviewProvider.h; sourceTree = "<group>"; };
+		12EBC6CD279013E50067C88D /* KKCommonTableViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommonTableViewProvider.h; sourceTree = "<group>"; };
 		12EBC6CE279013E60067C88D /* KKCommonCollectionViewProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommonCollectionViewProvider.m; sourceTree = "<group>"; };
-		12EBC6CF279013E60067C88D /* KKCommonTableviewProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommonTableviewProvider.m; sourceTree = "<group>"; };
+		12EBC6CF279013E60067C88D /* KKCommonTableViewProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommonTableViewProvider.m; sourceTree = "<group>"; };
 		12EBC6D0279013E70067C88D /* KKCommonCollectionViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommonCollectionViewProvider.h; sourceTree = "<group>"; };
 		C8F903F227906C8F00E9BBEE /* KKProviderDataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKProviderDataHandler.h; sourceTree = "<group>"; };
 		C8F903F327906C8F00E9BBEE /* KKProviderDataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKProviderDataHandler.m; sourceTree = "<group>"; };
@@ -136,6 +141,9 @@
 				12EBC651278FC94D0067C88D /* ViewController.m */,
 				12EBC699278FCD3B0067C88D /* NewViewController.h */,
 				12EBC69A278FCD3B0067C88D /* NewViewController.m */,
+				126BFC302791481F00EF2E0D /* KKNewPresenter.h */,
+				126BFC312791481F00EF2E0D /* KKNewPresenter.m */,
+				126BFC362791482F00EF2E0D /* KKNewPresentation.h */,
 				12EBC653278FC94D0067C88D /* Main.storyboard */,
 				12EBC656278FC94F0067C88D /* Assets.xcassets */,
 				12EBC658278FC94F0067C88D /* LaunchScreen.storyboard */,
@@ -178,9 +186,9 @@
 		12EBC683278FC9840067C88D /* Context */ = {
 			isa = PBXGroup;
 			children = (
-				12EBC684278FC9CF0067C88D /* KKContext.h */,
-				12EBC685278FC9CF0067C88D /* KKContext.m */,
-				12EBC6C0278FEE0E0067C88D /* KKContextInterface.h */,
+				12EBC684278FC9CF0067C88D /* KKMVPContext.h */,
+				12EBC685278FC9CF0067C88D /* KKMVPContext.m */,
+				126BFC2527910B8500EF2E0D /* KKMVPContextInterface.h */,
 			);
 			path = Context;
 			sourceTree = "<group>";
@@ -205,8 +213,9 @@
 		12EBC6AD278FD92E0067C88D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				12EBC6AE278FD95D0067C88D /* KKPresenter.h */,
-				12EBC6AF278FD95D0067C88D /* KKPresenter.m */,
+				12EBC6AE278FD95D0067C88D /* KKMVPPresenter.h */,
+				12EBC6AF278FD95D0067C88D /* KKMVPPresenter.m */,
+				126BFC2C2791473600EF2E0D /* KKMVPPresentation.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -214,8 +223,8 @@
 		12EBC6CC279013840067C88D /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				12EBC6CD279013E50067C88D /* KKCommonTableviewProvider.h */,
-				12EBC6CF279013E60067C88D /* KKCommonTableviewProvider.m */,
+				12EBC6CD279013E50067C88D /* KKCommonTableViewProvider.h */,
+				12EBC6CF279013E60067C88D /* KKCommonTableViewProvider.m */,
 				12EBC6D0279013E70067C88D /* KKCommonCollectionViewProvider.h */,
 				12EBC6CE279013E60067C88D /* KKCommonCollectionViewProvider.m */,
 				C8F903F227906C8F00E9BBEE /* KKProviderDataHandler.h */,
@@ -358,10 +367,11 @@
 				12EBC652278FC94D0067C88D /* ViewController.m in Sources */,
 				12EBC64C278FC94D0067C88D /* AppDelegate.m in Sources */,
 				12EBC65D278FC94F0067C88D /* main.m in Sources */,
-				12EBC686278FC9CF0067C88D /* KKContext.m in Sources */,
+				12EBC686278FC9CF0067C88D /* KKMVPContext.m in Sources */,
 				12EBC692278FCB9C0067C88D /* UIViewController+KKMVP.m in Sources */,
-				12EBC6D2279013E70067C88D /* KKCommonTableviewProvider.m in Sources */,
-				12EBC6B0278FD95D0067C88D /* KKPresenter.m in Sources */,
+				126BFC322791481F00EF2E0D /* KKNewPresenter.m in Sources */,
+				12EBC6D2279013E70067C88D /* KKCommonTableViewProvider.m in Sources */,
+				12EBC6B0278FD95D0067C88D /* KKMVPPresenter.m in Sources */,
 				12EBC64F278FC94D0067C88D /* SceneDelegate.m in Sources */,
 				C8F903F427906C8F00E9BBEE /* KKProviderDataHandler.m in Sources */,
 			);

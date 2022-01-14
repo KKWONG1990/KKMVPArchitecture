@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "KKContextInterface.h"
-#import "KKPresenter.h"
+#import "KKMVPContextInterface.h"
+#import "KKNewPresenter.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /*
@@ -23,9 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
  Presenter弱引用视图代理(如控制器作为代理)
  */
 
-@interface KKContext : NSObject<KKContextInterface>
-@property (nonatomic, strong) KKPresenter * presenter;
-
+@interface KKMVPContext : NSObject<KKMVPContextInterface>
+@property (nonatomic, strong) KKNewPresenter * presenter;
+- (void)context_initializationSetup NS_REQUIRES_SUPER;
 @end
 
 NS_ASSUME_NONNULL_END

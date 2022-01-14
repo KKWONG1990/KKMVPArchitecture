@@ -31,7 +31,7 @@
     }
 }
 
-- (instancetype)initWithContext:(__kindof KKContext *)context {
+- (instancetype)initWithContext:(id<KKMVPContextInterface>)context {
     self = [self init];
     if (self) {
         [self setExtendedLayoutIncludesOpaqueBars:YES];
@@ -40,11 +40,10 @@
     return self;
 }
 
-- (void)mvp_didInitialization:(__kindof KKContext *)context {
+- (void)mvp_didInitialization:(id<KKMVPContextInterface>)context {
     if (context) {
         [self setContext:context];
         //当上下文存在时，自动调用设置方法，解放开发者双手
-        [self.context context_initializationSetup];
         [self.context context_attachDelegate:self];
     }
 }
@@ -98,11 +97,11 @@
     
 }
 
-- (void)setContext:(KKContext *)context {
+- (void)setContext:(KKMVPContext *)context {
     objc_setAssociatedObject(self, "context", context, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (KKContext *)context {
+- (KKMVPContext *)context {
     return objc_getAssociatedObject(self, "context");
 }
 

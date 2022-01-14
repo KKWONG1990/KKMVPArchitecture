@@ -1,18 +1,16 @@
 //
-//  KKContextInterface.h
+//  KKMVPContextInterface.h
 //  KKMVPArchitecture
 //
-//  Created by BYMac on 2022/1/13.
+//  Created by BYMac on 2022/1/14.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol KKContextInterface <NSObject>
+@protocol KKMVPContextInterface <NSObject>
 @optional
-/// 初始化设置
-- (void)context_initializationSetup;
 
 /// 视图加载完毕
 - (void)context_viewDidLoad;

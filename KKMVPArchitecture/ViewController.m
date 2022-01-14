@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import "NewViewController.h"
 #import "UIViewController+KKMVP.h"
-#import "KKContext.h"
+#import "KKMVPContext.h"
 @interface ViewController ()
 
 @end
@@ -21,7 +21,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NewViewController * vc = [[NewViewController alloc] initWithContext:[KKContext new]];
+    NewViewController * vc = [[NewViewController alloc] initWithContext:[KKMVPContext new]];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
