@@ -14,4 +14,8 @@
     NSLog(@"%@ Extute %s",self.class, __func__);
 }
 
+
+- (void)presenter_viewWillAppear:(BOOL)animated {
+    NSLog(@"%@ Extute %s",self.class, __func__);
+}
 @end

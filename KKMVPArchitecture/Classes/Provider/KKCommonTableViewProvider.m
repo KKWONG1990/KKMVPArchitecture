@@ -17,6 +17,7 @@
 
 - (void)provider_didInitTableViewProvider:(UITableView *)tableView {
     _tableView = tableView;
+    //设置代理和数据源
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _handler = [[KKProviderDataHandler alloc] init];

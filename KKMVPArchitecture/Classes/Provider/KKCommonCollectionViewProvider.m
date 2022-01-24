@@ -13,7 +13,6 @@
 @implementation KKCommonCollectionViewProvider
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewFlowLayout *)layout {
     [self provider_didInitCollectionViewProvider:collectionView layout:layout];
-    
     return [self init];
 }
 

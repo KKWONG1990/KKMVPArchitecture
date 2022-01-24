@@ -38,6 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/*
+ Provider作为UITableView的代理和数据源
+ 并持有UITableView，方便操作UITableView
+ */
+
 @interface KKCommonTableViewProvider : NSObject<UITableViewDelegate, UITableViewDataSource>
 
 /// 初始化表格视图数据者并指定一个表格视图和代理

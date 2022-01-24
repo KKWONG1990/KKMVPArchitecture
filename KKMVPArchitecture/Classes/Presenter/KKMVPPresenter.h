@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*
  由开发者继承该类实现子类化去做相关业务逻辑
- 
  */
 
 @interface KKMVPPresenter : NSObject<KKMVPPresentation>

@@ -9,6 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+/*
+ 开发者子类化的Presenter扩展协议继承该协议
+ */
+
 @protocol KKMVPPresentation <NSObject>
 @optional
 

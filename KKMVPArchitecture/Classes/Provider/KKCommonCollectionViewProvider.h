@@ -37,6 +37,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (CGSize)collectionViewProvider:(KKCommonCollectionViewProvider *)provider sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 @end
 
+
+/*
+ Provider作为UICollectionView的代理和数据源
+ 并持有UICollectionView，方便操作UICollectionView
+ */
+
 @interface KKCommonCollectionViewProvider : NSObject<UICollectionViewDelegate, UICollectionViewDataSource>
 /// 初始化表格视图数据者
 /// @param collectionView UICollectionView
